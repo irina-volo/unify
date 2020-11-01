@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@iri/core": ["libs/core/src/index.ts"],
+      "@iri/shared": ["libs/shared/src/index.ts"],
+      "@iri/features/charts": ["libs/features/charts/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

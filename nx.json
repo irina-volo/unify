@@ -29,6 +29,15 @@
     "unify-e2e": {
       "tags": [],
       "implicitDependencies": ["unify"]
+    },
+    "core": {
+      "tags": []
+    },
+    "shared": {
+      "tags": []
+    },
+    "features-charts": {
+      "tags": []
     }
   }
 }
