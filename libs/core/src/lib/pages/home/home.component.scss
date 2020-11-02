@@ -1,0 +1,19 @@
+// @import 'custom-theme';
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.icon {
+  padding: 0 14px;
+}
+
+.main-container {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
