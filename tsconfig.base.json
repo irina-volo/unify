@@ -7,6 +7,7 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "resolveJsonModule": true,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
@@ -18,7 +19,8 @@
     "paths": {
       "@iri/core": ["libs/core/src/index.ts"],
       "@iri/shared": ["libs/shared/src/index.ts"],
-      "@iri/features/charts": ["libs/features/charts/src/index.ts"]
+      "@iri/features/charts": ["libs/features/charts/src/index.ts"],
+      "@workspace/charts": ["libs/charts/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

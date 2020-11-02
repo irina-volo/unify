@@ -1,0 +1,9 @@
+<div class='top-level'>
+    <div class='title'>
+      Width: {{width$ | async}} 
+    </div>
+    
+    <div id={{chartElement}} class='the-chart' [ngStyle]="{'height.px': ((width$|async) * .6) }" >
+    </div>
+    
+</div>
