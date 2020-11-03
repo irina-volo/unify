@@ -6,7 +6,7 @@ import { VisualizationTypes, VisualizerConfigs } from '../shared/enums';
 import { IBar,IColumn,IDualAxisBar,
          IDualAxisColumn, IDualAxisLine,
          IStackedBar, IStackedColumn } from  '../shared/interfaces/visual-configs'
-import *  as barJson from 'apps/unify/src/assets/mock-data/visualization-json/Bar.json'         
+//import *  as barJson from '../../assets/mock-data/visualization-json/Bar.json'         
 @Injectable({
   providedIn: 'root'
 })

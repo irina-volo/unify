@@ -4,6 +4,9 @@ import * as am4core from "@amcharts/amcharts4/core";
 import * as am4charts from "@amcharts/amcharts4/charts";
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 
+import { RestApiService } from '../../services/rest-api.service';
+import { VisualizerConfigs } from '../../shared/enums'
+
 @Component({
   selector: 'iri-chart-wrapper1',
   templateUrl: './chart-wrapper1.component.html',
@@ -11,11 +14,16 @@ import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 })
 export class ChartWrapperAComponent implements OnInit {
 
-  constructor(  ) { 
-    console.log('ssssssssssssssssssssssssssssssssssiiiiii');
+  constructor( private restApiService: RestApiService ) { 
+    
   }
 
   ngOnInit() {
+    this.restApiService.getVisualizerConfig(VisualizerConfigs.Bar).subscribe(data => {
+     // this.vizCfg = data
+     // this.vizIndex = 0
+     console.log('ssssssssssssssssssssssssssssssssssiiiiii', data);
+    });
     am4core.useTheme(am4themes_animated);
     let chart = am4core.create("chartdiv", am4charts.PieChart);
     chart.data = [ {
